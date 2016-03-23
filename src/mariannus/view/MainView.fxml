@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane prefHeight="768.0" prefWidth="1300.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mariannus.view.MainViewC">
+   <tabs>
+      <Tab text="Interier">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="tab1" layoutX="48.0" layoutY="62.0" prefHeight="106.0" prefWidth="101.0" text="stôl" id="0"/>
+                  <Label fx:id="tab2" layoutX="48.0" layoutY="184.0" prefHeight="106.0" prefWidth="101.0" text="stôl" id="1"/>
+                  <Label fx:id="tab3" layoutX="48.0" layoutY="341.0" prefHeight="106.0" prefWidth="101.0" text="stôl" id="2"/>
+                  <Label fx:id="tab9" layoutX="868.0" layoutY="539.0" prefHeight="106.0" prefWidth="101.0" text="stôl" id="8"/>
+                  <Label fx:id="tab8" layoutX="681.0" layoutY="539.0" prefHeight="106.0" prefWidth="101.0" text="stôl" id="7"/>
+                  <Label fx:id="tab5" layoutX="710.0" layoutY="364.0" prefHeight="106.0" prefWidth="101.0" text="stôl" id="4"/>
+                  <Label fx:id="tab6" layoutX="895.0" layoutY="364.0" prefHeight="106.0" prefWidth="101.0" text="stôl" id="5"/>
+                  <Label fx:id="tab7" layoutX="1059.0" layoutY="289.0" prefHeight="106.0" prefWidth="101.0" text="stôl" id="6"/>
+                  <Label fx:id="tab10" layoutX="1051.0" layoutY="539.0" prefHeight="106.0" prefWidth="101.0" text="stôl" id="9"/>
+                  <Label fx:id="tab4" layoutX="149.0" layoutY="539.0" prefHeight="106.0" prefWidth="333.0" text="stôl" id="3"/>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Terasa">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+      <Tab text="Správa tovaru">
+         <content>
+             <AnchorPane maxHeight="1080" maxWidth="1920" minHeight="0" minWidth="0">
+                 <children>
+                     <fx:include source="ItemView.fxml" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" />
+                 </children>
+             </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>

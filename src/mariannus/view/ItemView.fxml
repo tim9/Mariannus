@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mariannus.view.ItemViewC">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="500.0" layoutY="175.0" prefHeight="687.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="shortTable" layoutX="60.0" layoutY="69.0" prefHeight="656.0" prefWidth="401.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="category" prefWidth="75.0" text="Kategória" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <ToolBar layoutX="244.0" layoutY="659.0" prefHeight="45.0" prefWidth="143.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20">
+                     <items>
+                        <Button mnemonicParsing="false" onAction="#newCategory" text="pridaj" />
+                        <Button mnemonicParsing="false" onAction="#deleteCategory" text="vymaž" />
+                     </items>
+                  </ToolBar>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="itemTable" layoutX="8.0" layoutY="60.0" prefHeight="656.0" prefWidth="949.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="code" prefWidth="180.0" text="kód" />
+                      <TableColumn fx:id="name" prefWidth="582.0" text="názov" />
+                        <TableColumn fx:id="price" prefWidth="186.0" text="cena" />
+                    </columns>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TableView>
+                  <ToolBar layoutX="713.0" layoutY="666.0" prefHeight="45.0" prefWidth="207.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="25.0">
+                    <items>
+                      <Button mnemonicParsing="false" onAction="#newItem" text="pridaj" />
+                        <Button mnemonicParsing="false" onAction="#editItem" text="zmeń" />
+                        <Button mnemonicParsing="false" onAction="#deleteItem" text="vymaž" />
+                    </items>
+                  </ToolBar>
+                  <Button layoutX="52.0" layoutY="673.0" mnemonicParsing="false" onAction="#saveAll" text="Uložiť všetky zmeny" AnchorPane.bottomAnchor="14.0" />
+                  <Button layoutX="411.0" layoutY="673.0" mnemonicParsing="false" onAction="#showAll" text="Všetky produkty" AnchorPane.bottomAnchor="14.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

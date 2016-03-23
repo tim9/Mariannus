@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mariannus.view.OrderViewC">
+   <children>
+      <Label fx:id="tableName" layoutX="473.0" layoutY="14.0" text="Názov stola" AnchorPane.topAnchor="17.0" />
+      <TableView fx:id="orderedItems" layoutX="412.0" layoutY="59.0" prefHeight="439.0" prefWidth="1024.0" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="59.0">
+        <columns>
+          <TableColumn fx:id="code" prefWidth="189.0" text="Kód" />
+          <TableColumn fx:id="name" minWidth="0.0" prefWidth="544.0" text="Názov" />
+            <TableColumn fx:id="price" prefWidth="138.0" text="Cena" />
+            <TableColumn fx:id="paid" prefWidth="152.0" text="Zaplatené" />
+        </columns>
+      </TableView>
+      <Label layoutX="597.0" layoutY="514.0" text="Zostáva zaplatiť:" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="318.0" />
+      <Label fx:id="suma" layoutX="734.0" layoutY="514.0" text="1000" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="257.0" />
+      <Button layoutX="744.0" layoutY="551.0" mnemonicParsing="false" onAction="#add" text="Pridaj" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="222.0" />
+      <Button layoutX="818.0" layoutY="551.0" mnemonicParsing="false" onAction="#delete" text="Vymaž" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="142.0" />
+      <Button layoutX="903.0" layoutY="551.0" mnemonicParsing="false" onAction="#handleOk" text="OK" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="14.0" />
+   </children>
+</AnchorPane>
