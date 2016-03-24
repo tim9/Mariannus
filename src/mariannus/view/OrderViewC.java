@@ -41,7 +41,7 @@ public class OrderViewC {
     private TableColumn<ArrayList[], String> paid;
 
     private Stage stage;
-    private double medzi =0;
+    private double medzi =0, allSum =0;
 
     @FXML
     void initialize() {
@@ -72,9 +72,10 @@ public class OrderViewC {
 
     @FXML
     private void handleOk() {
-        if (isAllPaied())
+        if (isAllPaied()){
+            getInstance().getActiveOrders()[getInstance().getTabIndex()].setPrice(allSum);
             releseSlot();
-        setSum();
+        }
         stage.close();
     }
 
@@ -85,8 +86,6 @@ public class OrderViewC {
         for (Item item : getInstance().getItems()) {
             order.getOrdered().stream().filter(code -> code.equals(item.getCode())).forEach(code -> selectedData.add(item));
         }
-//        System.out.println(getInstance().getListPayed()[0]);
-//        System.out.println(getInstance().getActiveOrders()[getInstance().getTabIndex()]);
         code.setCellValueFactory(param -> param.getValue().codeProperty().asObject());
         name.setCellValueFactory(param -> param.getValue().nameProperty());
         price.setCellValueFactory(param -> param.getValue().priceProperty().asObject());
@@ -103,24 +102,23 @@ public class OrderViewC {
 //                    System.out.println("index tohto riadku je "+this.getIndex());
 //                    System.out.println("index stola je "+getInstance().getTabIndex());
                     if (getInstance().getListPayed()[getInstance().getTabIndex()].get(this.getIndex()).equals(false)) {
-                        checkBox.setSelected(false);
                         checkBox.setOnAction(event -> {
-                            getInstance().getListPayed()[getInstance().getTabIndex()].set(this.getIndex(), true);
-                            if (checkBox.isSelected()) //ten if osetruje aby sa po zakliknut odkliknuti priratavala odratavala cena
+                            if (checkBox.isSelected()) { //ten if osetruje aby sa po zakliknut odkliknuti priratavala odratavala cena
                                 subSum(selectedData.get(this.getIndex()));
-                            else addSum(selectedData.get(this.getIndex()));
+                                getInstance().getListPayed()[getInstance().getTabIndex()].set(this.getIndex(), true);
+                            }
+                            else {
+                                addSum(selectedData.get(this.getIndex()));
+                                getInstance().getListPayed()[getInstance().getTabIndex()].set(this.getIndex(), false);
+                            }
                         });
                     }
 //                    setStyle("-fx-background-color: red");
                     else if (getInstance().getListPayed()[getInstance().getTabIndex()].get(this.getIndex()).equals(true)) {
                         checkBox.setSelected(true);
-                        checkBox.setOnAction(event -> {
-                            getInstance().getListPayed()[getInstance().getTabIndex()].set(this.getIndex(), false);
-                            if (checkBox.isSelected())
-                                subSum(selectedData.get(this.getIndex()));
-                            else addSum(selectedData.get(this.getIndex()));
-                        });
+                        checkBox.setDisable(true);
                     }
+                    System.out.println(getInstance().getListPayed()[getInstance().getTabIndex()]);
                     setGraphic(checkBox);
                 }
             }
@@ -135,7 +133,6 @@ public class OrderViewC {
             if (bol.equals(false))
                 return false;
         }
-//        System.out.println("vsetko checked");
         return true;
     }
 
@@ -162,12 +159,13 @@ public class OrderViewC {
         double sum = getInstance().getActiveOrders()[getInstance().getTabIndex()].getPrice();
         if (sum <= 0.5) for (Item item : orderedItems.getItems())
             sum += item.getPrice();
+        allSum = sum;
         suma.setText(String.valueOf(Math.floor(sum * 100) / 100));
         getInstance().getActiveOrders()[getInstance().getTabIndex()].setPrice(sum);
     }
 
     //    funkcia odrata zakliknutu sumu od celkovej sumy a aktualizuje vypis a zaroven zobrazi medzisucet
-    void subSum(Item item) {
+    private void subSum(Item item) {
         double sum = getInstance().getActiveOrders()[getInstance().getTabIndex()].getPrice();
         sum -= item.getPrice();
         medzi+= item.getPrice();
@@ -176,7 +174,7 @@ public class OrderViewC {
         medzisucet.setText(String.valueOf(Math.floor(medzi * 100) / 100));
     }
 
-    void addSum(Item item) {
+    private void addSum(Item item) {
         double sum = getInstance().getActiveOrders()[getInstance().getTabIndex()].getPrice();
         sum += item.getPrice();
         medzi-= item.getPrice();
