@@ -69,6 +69,7 @@ public class OrderViewC {
 
     @FXML
     private void handleOk(){
+        isAllPaied();
         stage.close();
     }
 
@@ -111,7 +112,15 @@ public class OrderViewC {
         orderedItems.setItems(selectedData);
     }
 
-
+    //funkcia zisti ci bol vsetok tovar v konkretnej objednavke zaplateny
+    private boolean isAllPaied(){
+        for(Object bol: getInstance().getListPayed()[getInstance().getTabIndex()]){
+            if (bol.equals(false))
+                return false;
+        }
+//        System.out.println("vsetko checked");
+        return true;
+    }
 
     void setStage(Stage stage) {
         this.stage = stage;
