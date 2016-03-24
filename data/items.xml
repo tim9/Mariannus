@@ -4,1015 +4,864 @@
         <category>Káva</category>
         <code>0</code>
         <name>Espresso</name>
-        <paied>Nie</paied>
         <price>1.25</price>
     </item>
     <item>
         <category>Káva</category>
         <code>1</code>
         <name>Cappucino</name>
-        <paied>Nie</paied>
         <price>1.75</price>
     </item>
     <item>
         <category>Káva</category>
         <code>2</code>
         <name>Cappucino špeciál (kokos,karamel)</name>
-        <paied>Nie</paied>
         <price>1.75</price>
     </item>
     <item>
         <category>Káva</category>
         <code>3</code>
         <name>Caffé Latte</name>
-        <paied>Nie</paied>
         <price>1.85</price>
     </item>
     <item>
         <category>Káva</category>
         <code>4</code>
         <name>Caffé Latte špeciál (kokos,karamel)</name>
-        <paied>Nie</paied>
         <price>1.85</price>
     </item>
     <item>
         <category>Káva</category>
         <code>5</code>
         <name>Doppio</name>
-        <paied>Nie</paied>
         <price>1.95</price>
     </item>
     <item>
         <category>Káva</category>
         <code>6</code>
         <name>Viedenská</name>
-        <paied>Nie</paied>
         <price>1.75</price>
     </item>
     <item>
         <category>Káva</category>
         <code>7</code>
         <name>Zalievaná</name>
-        <paied>Nie</paied>
         <price>1.05</price>
     </item>
     <item>
         <category>Káva</category>
         <code>8</code>
         <name>Alžírska</name>
-        <paied>Nie</paied>
         <price>2.15</price>
     </item>
     <item>
         <category>Káva</category>
         <code>9</code>
         <name>Írska</name>
-        <paied>Nie</paied>
         <price>2.15</price>
     </item>
     <item>
         <category>Káva</category>
         <code>10</code>
         <name>Bezkofeinová</name>
-        <paied>Nie</paied>
         <price>1.55</price>
     </item>
     <item>
         <category>Káva</category>
         <code>11</code>
         <name>Frappé</name>
-        <paied>Nie</paied>
         <price>2.25</price>
     </item>
     <item>
         <category>Káva</category>
         <code>12</code>
         <name>Mlieko</name>
-        <paied>Nie</paied>
         <price>0.1</price>
     </item>
     <item>
         <category>Čokoláda</category>
         <code>13</code>
         <name>Horká</name>
-        <paied>Nie</paied>
         <price>2.15</price>
     </item>
     <item>
         <category>Čokoláda</category>
         <code>14</code>
         <name>Biela</name>
-        <paied>Nie</paied>
         <price>2.15</price>
     </item>
     <item>
         <category>Čokoláda</category>
         <code>15</code>
         <name>Oriešková</name>
-        <paied>Nie</paied>
         <price>2.15</price>
     </item>
     <item>
         <category>Čokoláda</category>
         <code>16</code>
         <name>Šľahačka</name>
-        <paied>Nie</paied>
         <price>0.5</price>
     </item>
     <item>
         <category>Čaj sypaný</category>
         <code>17</code>
         <name>Mäta</name>
-        <paied>Nie</paied>
         <price>1.45</price>
     </item>
     <item>
         <category>Čaj sypaný</category>
         <code>18</code>
         <name>Zelený</name>
-        <paied>Nie</paied>
         <price>1.45</price>
     </item>
     <item>
         <category>Čaj sypaný</category>
         <code>19</code>
         <name>Harmanček</name>
-        <paied>Nie</paied>
         <price>1.45</price>
     </item>
     <item>
         <category>Čaj sypaný</category>
         <code>20</code>
         <name>Čierny</name>
-        <paied>Nie</paied>
         <price>1.45</price>
     </item>
     <item>
         <category>Čaj sypaný</category>
         <code>21</code>
         <name>Biely</name>
-        <paied>Nie</paied>
         <price>1.45</price>
     </item>
     <item>
         <category>Čaj sypaný</category>
         <code>22</code>
         <name>Lesné plody</name>
-        <paied>Nie</paied>
         <price>1.45</price>
     </item>
     <item>
         <category>Džús</category>
         <code>23</code>
         <name>Jablko 0.1l</name>
-        <paied>Nie</paied>
         <price>0.95</price>
     </item>
     <item>
         <category>Džús</category>
         <code>24</code>
         <name>Pomaranč 0.1l</name>
-        <paied>Nie</paied>
         <price>0.95</price>
     </item>
     <item>
         <category>Džús</category>
         <code>25</code>
         <name>Limetka 0.1l</name>
-        <paied>Nie</paied>
         <price>0.95</price>
     </item>
     <item>
         <category>Džús</category>
         <code>26</code>
         <name>Ananás 0.1l</name>
-        <paied>Nie</paied>
         <price>0.95</price>
     </item>
     <item>
         <category>Džús</category>
         <code>27</code>
         <name>Granini 0.2l</name>
-        <paied>Nie</paied>
         <price>1.35</price>
     </item>
     <item>
         <category>Nealko</category>
         <code>28</code>
         <name>Coca Cola 0.33l</name>
-        <paied>Nie</paied>
         <price>1.35</price>
     </item>
     <item>
         <category>Nealko</category>
         <code>29</code>
         <name>Sprite 0.33l</name>
-        <paied>Nie</paied>
         <price>1.35</price>
     </item>
     <item>
         <category>Nealko</category>
         <code>30</code>
         <name>Kinley Tonic 0.33l</name>
-        <paied>Nie</paied>
         <price>1.35</price>
     </item>
     <item>
         <category>Nealko</category>
         <code>31</code>
         <name>Kinley Tonic zázvor 0.33l</name>
-        <paied>Nie</paied>
         <price>1.35</price>
     </item>
     <item>
         <category>Nealko</category>
         <code>32</code>
         <name>Redbull 0.25l</name>
-        <paied>Nie</paied>
         <price>2.45</price>
     </item>
     <item>
         <category>Nealko</category>
         <code>33</code>
         <name>Kofola 0.1l</name>
-        <paied>Nie</paied>
         <price>0.3</price>
     </item>
     <item>
         <category>Nealko</category>
         <code>34</code>
         <name>Voda s Citrónom 0.1l</name>
-        <paied>Nie</paied>
         <price>0.15</price>
     </item>
     <item>
         <category>Limonáda</category>
         <code>35</code>
         <name>malá 0.3l</name>
-        <paied>Nie</paied>
         <price>1.25</price>
     </item>
     <item>
         <category>Limonáda</category>
         <code>36</code>
         <name>stredná 0.5l</name>
-        <paied>Nie</paied>
         <price>1.95</price>
     </item>
     <item>
         <category>Limonáda</category>
         <code>37</code>
         <name>veľká 1l</name>
-        <paied>Nie</paied>
         <price>2.65</price>
     </item>
     <item>
         <category>Miešané drinky (nealko)</category>
         <code>38</code>
         <name>Levanduľový sen 0.35l</name>
-        <paied>Nie</paied>
         <price>2.95</price>
     </item>
     <item>
         <category>Miešané drinky (nealko)</category>
         <code>39</code>
         <name>Pinky Pietra 0,35l </name>
-        <paied>Nie</paied>
         <price>2.95</price>
     </item>
     <item>
         <category>Miešané drinky (nealko)</category>
         <code>40</code>
         <name>Mariannus Forest</name>
-        <paied>Nie</paied>
         <price>2.95</price>
     </item>
     <item>
         <category>Alkoholické nápoje</category>
         <code>41</code>
         <name>Pivovica Mariannus 52%</name>
-        <paied>Nie</paied>
         <price>1.95</price>
     </item>
     <item>
         <category>Alkoholické nápoje</category>
         <code>42</code>
         <name>Fínska vodka 40%</name>
-        <paied>Nie</paied>
         <price>1.55</price>
     </item>
     <item>
         <category>Alkoholické nápoje</category>
         <code>43</code>
         <name>Double Cross vodka 40%</name>
-        <paied>Nie</paied>
         <price>6.25</price>
     </item>
     <item>
         <category>Alkoholické nápoje</category>
         <code>44</code>
         <name>Nicolaus vodka 38%</name>
-        <paied>Nie</paied>
         <price>1.25</price>
     </item>
     <item>
         <category>Alkoholické nápoje</category>
         <code>45</code>
         <name>Absolut vodka 40%</name>
-        <paied>Nie</paied>
         <price>1.55</price>
     </item>
     <item>
         <category>Alkoholické nápoje</category>
         <code>46</code>
         <name>Absolut vodka citrus 40%</name>
-        <paied>Nie</paied>
         <price>1.55</price>
     </item>
     <item>
         <category>Alkoholické nápoje</category>
         <code>47</code>
         <name>Hruškovica destilát 42%</name>
-        <paied>Nie</paied>
         <price>1.85</price>
     </item>
     <item>
         <category>Alkoholické nápoje</category>
         <code>48</code>
         <name>Bošácka slivovica 52%</name>
-        <paied>Nie</paied>
         <price>1.45</price>
     </item>
     <item>
         <category>Alkoholické nápoje</category>
         <code>49</code>
         <name>Borovička 40%</name>
-        <paied>Nie</paied>
         <price>1.45</price>
     </item>
     <item>
         <category>Alkoholické nápoje</category>
         <code>50</code>
         <name>Tatranský čaj 52%</name>
-        <paied>Nie</paied>
         <price>1.95</price>
     </item>
     <item>
         <category>Welcome drink</category>
         <code>51</code>
         <name>Martini 15%</name>
-        <paied>Nie</paied>
         <price>2.15</price>
     </item>
     <item>
         <category>Welcome drink</category>
         <code>52</code>
         <name>Prosecco Treviso 12%</name>
-        <paied>Nie</paied>
         <price>12.0</price>
     </item>
     <item>
         <category>Welcome drink</category>
         <code>53</code>
         <name>Bianco Castellino 10%</name>
-        <paied>Nie</paied>
         <price>1.85</price>
     </item>
     <item>
         <category>Šampanské</category>
         <code>54</code>
         <name>Hubert Deluxe 75</name>
-        <paied>Nie</paied>
         <price>9.0</price>
     </item>
     <item>
         <category>Šampanské</category>
         <code>55</code>
         <name>Moët et Chandon 12%</name>
-        <paied>Nie</paied>
         <price>75.0</price>
     </item>
     <item>
         <category>Likér</category>
         <code>56</code>
         <name>Fernet Stock 38%</name>
-        <paied>Nie</paied>
-        <price>1.55</price>
-    </item>
-    <item>
-        <category>Likér</category>
-        <code>56</code>
-        <name>Fernet Stock 38%</name>
-        <paied>Nie</paied>
         <price>1.55</price>
     </item>
     <item>
         <category>Likér</category>
         <code>57</code>
         <name>Fernet Stock citrus 27%</name>
-        <paied>Nie</paied>
         <price>1.55</price>
     </item>
     <item>
         <category>Likér</category>
         <code>58</code>
         <name>Becherovka 38%</name>
-        <paied>Nie</paied>
         <price>1.65</price>
     </item>
     <item>
         <category>Likér</category>
         <code>59</code>
         <name>Vaječný likér 17%</name>
-        <paied>Nie</paied>
         <price>1.45</price>
     </item>
     <item>
         <category>Likér</category>
         <code>60</code>
         <name>Jägermeister 35%%</name>
-        <paied>Nie</paied>
         <price>2.15</price>
     </item>
     <item>
         <category>Likér</category>
         <code>61</code>
         <name>Griotka 35%</name>
-        <paied>Nie</paied>
         <price>1.25</price>
     </item>
     <item>
         <category>Likér</category>
         <code>62</code>
         <name>Bayleis 17%</name>
-        <paied>Nie</paied>
         <price>2.15</price>
     </item>
     <item>
         <category>Rum</category>
         <code>63</code>
         <name>Ron Zacapa 23yo 40%</name>
-        <paied>Nie</paied>
         <price>5.95</price>
     </item>
     <item>
         <category>Rum</category>
         <code>64</code>
         <name>Captain Morgan 35%</name>
-        <paied>Nie</paied>
         <price>1.75</price>
     </item>
     <item>
         <category>Rum</category>
         <code>65</code>
         <name>Malibu 21%</name>
-        <paied>Nie</paied>
         <price>1.75</price>
     </item>
     <item>
         <category>Rum</category>
         <code>66</code>
         <name>Bacardi 37,5%</name>
-        <paied>Nie</paied>
         <price>1.95</price>
     </item>
     <item>
         <category>Rum</category>
         <code>67</code>
         <name>Bacardi Black 37,5%</name>
-        <paied>Nie</paied>
         <price>1.95</price>
     </item>
     <item>
         <category>Rum</category>
         <code>68</code>
         <name>Bacardi Oakheart 37,5%</name>
-        <paied>Nie</paied>
         <price>1.95</price>
     </item>
     <item>
         <category>Brandy</category>
         <code>69</code>
         <name>Karpatské Brandy 40%</name>
-        <paied>Nie</paied>
         <price>2.15</price>
     </item>
     <item>
         <category>Brandy</category>
         <code>70</code>
         <name>Karpatské Brandy špeciál 40%</name>
-        <paied>Nie</paied>
         <price>3.65</price>
     </item>
     <item>
         <category>Brandy</category>
         <code>71</code>
         <name>Metaxa 5* 38%</name>
-        <paied>Nie</paied>
         <price>1.95</price>
     </item>
     <item>
         <category>Whiskey</category>
         <code>72</code>
         <name>Jack Daniels 40%</name>
-        <paied>Nie</paied>
         <price>2.65</price>
     </item>
     <item>
         <category>Whiskey</category>
         <code>73</code>
         <name>Tullamore Dew 40%</name>
-        <paied>Nie</paied>
         <price>2.15</price>
     </item>
     <item>
         <category>Whiskey</category>
         <code>74</code>
         <name>Jameson 40%</name>
-        <paied>Nie</paied>
         <price>2.15</price>
     </item>
     <item>
         <category>Whiskey</category>
         <code>75</code>
         <name>Ballantines 40%</name>
-        <paied>Nie</paied>
         <price>2.35</price>
     </item>
     <item>
         <category>Whiskey</category>
         <code>76</code>
         <name>Chivas Regal 12yo 40%</name>
-        <paied>Nie</paied>
         <price>3.15</price>
     </item>
     <item>
         <category>Whiskey</category>
         <code>77</code>
         <name>Black Burn 40%</name>
-        <paied>Nie</paied>
         <price>2.95</price>
     </item>
     <item>
         <category>Burbon</category>
         <code>78</code>
         <name>Jim Beam 40%</name>
-        <paied>Nie</paied>
         <price>1.85</price>
     </item>
     <item>
         <category>Tequila</category>
         <code>79</code>
         <name>Pepe Lopez 40%</name>
-        <paied>Nie</paied>
         <price>1.55</price>
     </item>
     <item>
         <category>Cognac</category>
         <code>80</code>
         <name>Hennessy V.S. 40%</name>
-        <paied>Nie</paied>
         <price>3.25</price>
     </item>
     <item>
         <category>Cognac</category>
-        <code>80</code>
+        <code>143</code>
         <name>Braastad V.S.O.P. 40%</name>
-        <paied>Nie</paied>
         <price>4.45</price>
     </item>
     <item>
         <category>Gin</category>
         <code>81</code>
         <name>Beefeater 40%</name>
-        <paied>Nie</paied>
         <price>2.15</price>
     </item>
     <item>
         <category>Miešané drinky (alko)</category>
         <code>82</code>
         <name>Bavorák 0,35l</name>
-        <paied>Nie</paied>
         <price>2.85</price>
     </item>
     <item>
         <category>Miešané drinky (alko)</category>
         <code>83</code>
         <name>Cuba Libre 0,35l</name>
-        <paied>Nie</paied>
         <price>3.15</price>
     </item>
     <item>
         <category>Miešané drinky (alko)</category>
         <code>84</code>
         <name>Pinakoláda 0,35l</name>
-        <paied>Nie</paied>
         <price>3.75</price>
     </item>
     <item>
         <category>Miešané drinky (alko)</category>
         <code>85</code>
         <name>Summertime 0,35l</name>
-        <paied>Nie</paied>
         <price>3.75</price>
     </item>
     <item>
         <category>Miešané drinky (alko)</category>
         <code>86</code>
         <name>Aperol Spritz 0,2l</name>
-        <paied>Nie</paied>
         <price>3.95</price>
     </item>
     <item>
         <category>Pivo</category>
         <code>87</code>
         <name>Mariannus svetlý 11° 0.3l</name>
-        <paied>Nie</paied>
         <price>1.0</price>
     </item>
     <item>
         <category>Pivo</category>
         <code>88</code>
         <name>Mariannus svetlý 11° 0.5l</name>
-        <paied>Nie</paied>
         <price>1.35</price>
     </item>
     <item>
         <category>Pivo</category>
         <code>89</code>
         <name>Mariannus svetlý 11° 1l</name>
-        <paied>Nie</paied>
         <price>2.6</price>
     </item>
     <item>
         <category>Pivo</category>
         <code>90</code>
         <name>Mariannus polotmavý 16° 0.3l</name>
-        <paied>Nie</paied>
         <price>1.1</price>
     </item>
     <item>
         <category>Pivo</category>
         <code>91</code>
         <name>Mariannus polotmavý 16° 0.5l</name>
-        <paied>Nie</paied>
         <price>1.5</price>
     </item>
     <item>
         <category>Pivo</category>
         <code>92</code>
         <name>Mariannus polotmavý 16° 1l</name>
-        <paied>Nie</paied>
         <price>2.75</price>
     </item>
     <item>
         <category>Pivo</category>
         <code>93</code>
         <name>Mariannus tmavý 14° 0.3l</name>
-        <paied>Nie</paied>
         <price>1.1</price>
     </item>
     <item>
         <category>Pivo</category>
         <code>94</code>
         <name>Mariannus tmavý 14° 0.5l</name>
-        <paied>Nie</paied>
         <price>1.5</price>
     </item>
     <item>
         <category>Pivo</category>
         <code>95</code>
         <name>Mariannus tmavý 14° 1l</name>
-        <paied>Nie</paied>
         <price>2.75</price>
     </item>
     <item>
         <category>Pivo</category>
         <code>96</code>
         <name>Mariannus višňový 13° 0.3l</name>
-        <paied>Nie</paied>
         <price>1.1</price>
     </item>
     <item>
         <category>Pivo</category>
         <code>97</code>
         <name>Mariannus višňový 13° 0.5l</name>
-        <paied>Nie</paied>
         <price>1.5</price>
     </item>
     <item>
         <category>Pivo</category>
         <code>98</code>
         <name>Mariannus višňový 13° 1l</name>
-        <paied>Nie</paied>
         <price>2.75</price>
     </item>
     <item>
         <category>Víno</category>
         <code>99</code>
         <name>Nichta, Rizling vlašský, akostné</name>
-        <paied>Nie</paied>
         <price>1.65</price>
     </item>
     <item>
         <category>Víno</category>
         <code>100</code>
         <name>Nichta, Frankovka modrá, akostné</name>
-        <paied>Nie</paied>
         <price>1.65</price>
     </item>
     <item>
         <category>Víno</category>
         <code>101</code>
         <name>Piont Noir</name>
-        <paied>Nie</paied>
         <price>1.65</price>
     </item>
     <item>
         <category>Víno</category>
         <code>102</code>
         <name>Prestige Chardonnay 2013</name>
-        <paied>Nie</paied>
         <price>15.0</price>
     </item>
     <item>
         <category>Víno</category>
         <code>103</code>
         <name>Prestige Frankovka modrá 2013</name>
-        <paied>Nie</paied>
         <price>15.0</price>
     </item>
     <item>
         <category>Víno</category>
         <code>104</code>
         <name>Prestige Cabernet Sauvignon 2009</name>
-        <paied>Nie</paied>
         <price>15.0</price>
     </item>
     <item>
         <category>Víno</category>
         <code>105</code>
         <name>Prestige Cabernet Sauvignon 2013</name>
-        <paied>Nie</paied>
         <price>15.0</price>
     </item>
     <item>
         <category>Víno</category>
         <code>106</code>
         <name>Muškát Moravský 2015</name>
-        <paied>Nie</paied>
         <price>10.0</price>
     </item>
     <item>
         <category>Víno</category>
         <code>107</code>
         <name>Tramín červený (nesk. zber)2014</name>
-        <paied>Nie</paied>
         <price>14.0</price>
     </item>
     <item>
         <category>Víno</category>
         <code>108</code>
         <name>Devín 2014</name>
-        <paied>Nie</paied>
         <price>16.0</price>
     </item>
     <item>
         <category>Víno</category>
         <code>109</code>
         <name>Dunaj 2014</name>
-        <paied>Nie</paied>
         <price>14.0</price>
     </item>
     <item>
         <category>Víno</category>
         <code>110</code>
         <name>Tramín červený2014</name>
-        <paied>Nie</paied>
         <price>17.0</price>
     </item>
     <item>
         <category>Víno</category>
         <code>111</code>
         <name>Alibernet 2011</name>
-        <paied>Nie</paied>
         <price>17.0</price>
     </item>
     <item>
         <category>Víno</category>
         <code>112</code>
         <name>Furmint Mono 2011</name>
-        <paied>Nie</paied>
         <price>18.0</price>
     </item>
     <item>
         <category>Víno</category>
         <code>113</code>
         <name>Macik Cuvée 2012</name>
-        <paied>Nie</paied>
         <price>18.0</price>
     </item>
     <item>
         <category>Víno</category>
         <code>114</code>
         <name>Pinot Noir 2015</name>
-        <paied>Nie</paied>
         <price>8.5</price>
     </item>
     <item>
         <category>Víno</category>
         <code>115</code>
         <name>Muškát Moravský 2014</name>
-        <paied>Nie</paied>
         <price>12.0</price>
     </item>
     <item>
         <category>Víno</category>
         <code>116</code>
         <name>Pionot Gris 2013</name>
-        <paied>Nie</paied>
         <price>18.0</price>
     </item>
     <item>
         <category>Víno</category>
         <code>117</code>
         <name>Chardonnay selection 2013</name>
-        <paied>Nie</paied>
         <price>24.0</price>
     </item>
     <item>
         <category>Zvýhodnené menu</category>
         <code>118</code>
         <name>Káva, 2x domáca špaldová sušienka , jogurt, džús</name>
-        <paied>Nie</paied>
         <price>2.9</price>
     </item>
     <item>
         <category>Zvýhodnené menu</category>
         <code>119</code>
         <name>Paninni, čaj</name>
-        <paied>Nie</paied>
         <price>2.9</price>
     </item>
     <item>
         <category>Zvýhodnené menu</category>
         <code>120</code>
         <name>1l Pivo Mariannus, Pivný chlieb s nátierkou</name>
-        <paied>Nie</paied>
         <price>3.5</price>
     </item>
     <item>
         <category>Paniny</category>
         <code>121</code>
         <name>Šunkové, Syrové</name>
-        <paied>Nie</paied>
         <price>2.35</price>
     </item>
     <item>
         <category>Dezerty</category>
         <code>141</code>
         <name>Marlenka 100g</name>
-        <paied>Nie</paied>
         <price>2.85</price>
     </item>
     <item>
         <category>Dezerty</category>
         <code>122</code>
         <name>Zmrzlinový pohár</name>
-        <paied>Nie</paied>
         <price>2.35</price>
     </item>
     <item>
         <category>Dezerty</category>
         <code>123</code>
         <name>Ovocný pohár so šľahačkou</name>
-        <paied>Nie</paied>
         <price>2.0</price>
     </item>
     <item>
         <category>Pochutiny</category>
         <code>124</code>
         <name>Chipsy 100g</name>
-        <paied>Nie</paied>
         <price>1.3</price>
     </item>
     <item>
         <category>Pochutiny</category>
         <code>125</code>
         <name>Tyčinky Dru</name>
-        <paied>Nie</paied>
         <price>0.9</price>
     </item>
     <item>
         <category>Pochutiny</category>
         <code>126</code>
         <name>Solené Arašidy</name>
-        <paied>Nie</paied>
         <price>0.85</price>
     </item>
     <item>
         <category>Pochutiny</category>
         <code>127</code>
         <name>Domáci Pivný chlieb s nátierkou</name>
-        <paied>Nie</paied>
         <price>0.5</price>
     </item>
     <item>
         <category>Pizza</category>
-        <code>127</code>
+        <code>142</code>
         <name>Margherita</name>
-        <paied>Nie</paied>
         <price>4.5</price>
     </item>
     <item>
         <category>Pizza</category>
         <code>128</code>
         <name>Vegetariana</name>
-        <paied>Nie</paied>
         <price>4.5</price>
     </item>
     <item>
         <category>Pizza</category>
         <code>129</code>
         <name>Quatro</name>
-        <paied>Nie</paied>
         <price>4.5</price>
     </item>
     <item>
         <category>Pizza</category>
         <code>130</code>
         <name>Athena</name>
-        <paied>Nie</paied>
         <price>4.5</price>
     </item>
     <item>
         <category>Pizza</category>
         <code>131</code>
         <name>Salamandra</name>
-        <paied>Nie</paied>
         <price>4.5</price>
     </item>
     <item>
         <category>Pizza</category>
         <code>132</code>
         <name>Buffalo Bill</name>
-        <paied>Nie</paied>
         <price>4.5</price>
     </item>
     <item>
         <category>Pizza</category>
         <code>133</code>
         <name>Vesuvio</name>
-        <paied>Nie</paied>
         <price>4.5</price>
     </item>
     <item>
         <category>Pizza</category>
         <code>134</code>
         <name>Pompej</name>
-        <paied>Nie</paied>
         <price>4.5</price>
     </item>
     <item>
         <category>Pizza</category>
         <code>135</code>
         <name>El Diablo</name>
-        <paied>Nie</paied>
         <price>4.5</price>
     </item>
     <item>
         <category>Pizza</category>
         <code>136</code>
         <name>Hawai</name>
-        <paied>Nie</paied>
         <price>4.5</price>
     </item>
     <item>
         <category>Pizza</category>
         <code>137</code>
         <name>Thai</name>
-        <paied>Nie</paied>
         <price>4.5</price>
     </item>
     <item>
         <category>Burger</category>
         <code>138</code>
         <name>Domáci Hamburger</name>
-        <paied>Nie</paied>
         <price>4.9</price>
     </item>
     <item>
         <category>Burger</category>
         <code>139</code>
         <name>Domáci Cheesburger</name>
-        <paied>Nie</paied>
         <price>4.9</price>
     </item>
     <item>
         <category>Burger</category>
         <code>140</code>
         <name>Domáci Baconburger</name>
-        <paied>Nie</paied>
         <price>4.9</price>
     </item>
 </Items>

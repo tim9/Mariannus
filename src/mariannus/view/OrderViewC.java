@@ -36,10 +36,9 @@ public class OrderViewC {
     @FXML
     private TableColumn<Item, Double> price;
     @FXML
-    private TableColumn<ArrayList[],String> paid;
+    private TableColumn<ArrayList[], String> paid;
 
     private Stage stage;
-
 
     @FXML
     void initialize() {
@@ -69,14 +68,14 @@ public class OrderViewC {
     }
 
     @FXML
-    private void handleOk(){
+    private void handleOk() {
         if (isAllPaied())
             releseSlot();
         stage.close();
     }
 
     //  funkcia nacita a zobrazi polozky, ktore si ludia objednali pri stole.
-        void loadOrderedItems() {
+    void loadOrderedItems() {
         ObservableList<Item> selectedData = FXCollections.observableArrayList();
         Order order = getInstance().getActiveOrders()[getInstance().getTabIndex()];
         for (Item item : getInstance().getItems()) {
@@ -87,7 +86,7 @@ public class OrderViewC {
         code.setCellValueFactory(param -> param.getValue().codeProperty().asObject());
         name.setCellValueFactory(param -> param.getValue().nameProperty());
         price.setCellValueFactory(param -> param.getValue().priceProperty().asObject());
-        paid.setCellFactory(param -> new TableCell<ArrayList[], String>(){ //cellfactory ktory prida do tabulky checkbox a jemu eventhandler.
+        paid.setCellFactory(param -> new TableCell<ArrayList[], String>() { //cellfactory ktory prida do tabulky checkbox a jemu eventhandler.
             @Override
             protected void updateItem(String item, boolean empty) {
                 super.updateItem(item, empty);
@@ -99,24 +98,36 @@ public class OrderViewC {
                     CheckBox checkBox = new CheckBox();
 //                    System.out.println("index tohto riadku je "+this.getIndex());
 //                    System.out.println("index stola je "+getInstance().getTabIndex());
-                    if (getInstance().getListPayed()[getInstance().getTabIndex()].get(this.getIndex()).equals(false))
+                    if (getInstance().getListPayed()[getInstance().getTabIndex()].get(this.getIndex()).equals(false)) {
                         checkBox.setSelected(false);
-                        checkBox.setOnAction(event -> getInstance().getListPayed()[getInstance().getTabIndex()].set(this.getIndex(),true));
+                        checkBox.setOnAction(event -> {
+                            getInstance().getListPayed()[getInstance().getTabIndex()].set(this.getIndex(), true);
+                            if (checkBox.isSelected()) //ten if osetruje aby sa po zakliknut odkliknuti priratavala odratavala cena
+                                subSum(selectedData.get(this.getIndex()));
+                            else addSum(selectedData.get(this.getIndex()));
+                        });
+                    }
 //                    setStyle("-fx-background-color: red");
-                    if (getInstance().getListPayed()[getInstance().getTabIndex()].get(this.getIndex()).equals(true)){
+                    else if (getInstance().getListPayed()[getInstance().getTabIndex()].get(this.getIndex()).equals(true)) {
                         checkBox.setSelected(true);
-                        checkBox.setOnAction(event -> getInstance().getListPayed()[getInstance().getTabIndex()].set(this.getIndex(),false));
+                        checkBox.setOnAction(event -> {
+                            getInstance().getListPayed()[getInstance().getTabIndex()].set(this.getIndex(), false);
+                            if (checkBox.isSelected())
+                                subSum(selectedData.get(this.getIndex()));
+                            else addSum(selectedData.get(this.getIndex()));
+                        });
                     }
                     setGraphic(checkBox);
                 }
             }
         });
         orderedItems.setItems(selectedData);
+        setSum();
     }
 
     //funkcia zisti ci bol vsetok tovar v konkretnej objednavke zaplateny
-    private boolean isAllPaied(){
-        for(Object bol: getInstance().getListPayed()[getInstance().getTabIndex()]){
+    private boolean isAllPaied() {
+        for (Object bol : getInstance().getListPayed()[getInstance().getTabIndex()]) {
             if (bol.equals(false))
                 return false;
         }
@@ -124,10 +135,10 @@ public class OrderViewC {
         return true;
     }
 
-//    funkcia uvolni prislusny slot
-    private void releseSlot(){
-        getInstance().getActiveOrders()[getInstance().getTabIndex()]=null;
-        getInstance().getListPayed()[getInstance().getTabIndex()]=null;
+    //    funkcia uvolni prislusny slot
+    private void releseSlot() {
+        getInstance().getActiveOrders()[getInstance().getTabIndex()] = null;
+        getInstance().getListPayed()[getInstance().getTabIndex()] = null;
     }
 
     void addTableName(Label tab) {
@@ -139,7 +150,31 @@ public class OrderViewC {
         name.ifPresent(nm -> {
             getInstance().getActiveOrders()[getInstance().getTabIndex()].setName(nm);
             tab.setText(nm);
+            tableName.setText(nm);
         });
+    }
+
+    private void setSum() {
+        double sum = getInstance().getActiveOrders()[getInstance().getTabIndex()].getPrice();
+        if (sum == 0) for (Item item : orderedItems.getItems())
+            sum += item.getPrice();
+        suma.setText(String.valueOf(Math.floor(sum * 100) / 100));
+        getInstance().getActiveOrders()[getInstance().getTabIndex()].setPrice(sum);
+    }
+
+    //    funkcia odrata zakliknutu sumu od celkovej sumy a aktualizuje vypis
+    void subSum(Item item) {
+        double sum = getInstance().getActiveOrders()[getInstance().getTabIndex()].getPrice();
+        sum -= item.getPrice();
+        getInstance().getActiveOrders()[getInstance().getTabIndex()].setPrice(sum);
+        suma.setText(String.valueOf(Math.floor(sum * 100) / 100));
+    }
+
+    void addSum(Item item) {
+        double sum = getInstance().getActiveOrders()[getInstance().getTabIndex()].getPrice();
+        sum += item.getPrice();
+        getInstance().getActiveOrders()[getInstance().getTabIndex()].setPrice(sum);
+        suma.setText(String.valueOf(Math.floor(sum * 100) / 100));
     }
 
     void setStage(Stage stage) {

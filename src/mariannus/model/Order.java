@@ -14,7 +14,7 @@ import java.util.List;
 public class Order {
     private final StringProperty name;
     private final List<Integer> ordered;
-//    private final int tableId;
+    private double price = 0;
 
     public Order(String name) {
         this.name = new SimpleStringProperty(name);
@@ -39,5 +39,13 @@ public class Order {
 
     public List<Integer> getOrdered() {
         return ordered;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
