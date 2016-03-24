@@ -28,6 +28,8 @@ public class OrderViewC {
     @FXML
     private Label suma;
     @FXML
+    private Label medzisucet;
+    @FXML
     private TableView<Item> orderedItems;
     @FXML
     private TableColumn<Item, Integer> code;
@@ -39,6 +41,7 @@ public class OrderViewC {
     private TableColumn<ArrayList[], String> paid;
 
     private Stage stage;
+    private double medzi =0;
 
     @FXML
     void initialize() {
@@ -71,6 +74,7 @@ public class OrderViewC {
     private void handleOk() {
         if (isAllPaied())
             releseSlot();
+        setSum();
         stage.close();
     }
 
@@ -156,25 +160,30 @@ public class OrderViewC {
 
     private void setSum() {
         double sum = getInstance().getActiveOrders()[getInstance().getTabIndex()].getPrice();
-        if (sum == 0) for (Item item : orderedItems.getItems())
+        if (sum <= 0.5) for (Item item : orderedItems.getItems())
             sum += item.getPrice();
         suma.setText(String.valueOf(Math.floor(sum * 100) / 100));
         getInstance().getActiveOrders()[getInstance().getTabIndex()].setPrice(sum);
     }
 
-    //    funkcia odrata zakliknutu sumu od celkovej sumy a aktualizuje vypis
+    //    funkcia odrata zakliknutu sumu od celkovej sumy a aktualizuje vypis a zaroven zobrazi medzisucet
     void subSum(Item item) {
         double sum = getInstance().getActiveOrders()[getInstance().getTabIndex()].getPrice();
         sum -= item.getPrice();
+        medzi+= item.getPrice();
         getInstance().getActiveOrders()[getInstance().getTabIndex()].setPrice(sum);
         suma.setText(String.valueOf(Math.floor(sum * 100) / 100));
+        medzisucet.setText(String.valueOf(Math.floor(medzi * 100) / 100));
     }
 
     void addSum(Item item) {
         double sum = getInstance().getActiveOrders()[getInstance().getTabIndex()].getPrice();
         sum += item.getPrice();
+        medzi-= item.getPrice();
         getInstance().getActiveOrders()[getInstance().getTabIndex()].setPrice(sum);
         suma.setText(String.valueOf(Math.floor(sum * 100) / 100));
+        medzisucet.setText(String.valueOf(Math.floor(medzi * 100) / 100));
+        medzisucet.setText(String.valueOf(Math.floor(medzi * 100) / 100));
     }
 
     void setStage(Stage stage) {

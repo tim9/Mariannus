@@ -20,5 +20,7 @@
       <Button layoutX="744.0" layoutY="551.0" mnemonicParsing="false" onAction="#add" text="Pridaj" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="222.0" />
       <Button layoutX="818.0" layoutY="551.0" mnemonicParsing="false" onAction="#delete" text="Vymaž" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="142.0" />
       <Button layoutX="903.0" layoutY="551.0" mnemonicParsing="false" onAction="#handleOk" text="OK" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="14.0" />
+      <Label fx:id="medzisucet" layoutX="939.0" layoutY="514.0" text="0" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="76.0" />
+      <Label layoutX="882.0" layoutY="514.0" text="Pytaj" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="109.0" />
    </children>
 </AnchorPane>
