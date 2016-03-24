@@ -69,7 +69,8 @@ public class OrderViewC {
 
     @FXML
     private void handleOk(){
-        isAllPaied();
+        if (isAllPaied())
+            releseSlot();
         stage.close();
     }
 
@@ -120,6 +121,12 @@ public class OrderViewC {
         }
 //        System.out.println("vsetko checked");
         return true;
+    }
+
+//    funkcia uvolni prislusny slot
+    private void releseSlot(){
+        getInstance().getActiveOrders()[getInstance().getTabIndex()]=null;
+        getInstance().getListPayed()[getInstance().getTabIndex()]=null;
     }
 
     void setStage(Stage stage) {
