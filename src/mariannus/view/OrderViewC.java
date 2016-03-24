@@ -15,6 +15,7 @@ import mariannus.model.Order;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Optional;
 
 import static mariannus.model.ObjectsStorage.getInstance;
 
@@ -127,6 +128,18 @@ public class OrderViewC {
     private void releseSlot(){
         getInstance().getActiveOrders()[getInstance().getTabIndex()]=null;
         getInstance().getListPayed()[getInstance().getTabIndex()]=null;
+    }
+
+    void addTableName(Label tab) {
+        TextInputDialog dialog = new TextInputDialog();
+        dialog.setTitle("Zadaj názov");
+        dialog.setHeaderText(null);
+        dialog.setContentText("zadaj meno stola");
+        Optional<String> name = dialog.showAndWait();
+        name.ifPresent(nm -> {
+            getInstance().getActiveOrders()[getInstance().getTabIndex()].setName(nm);
+            tab.setText(nm);
+        });
     }
 
     void setStage(Stage stage) {

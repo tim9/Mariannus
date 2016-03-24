@@ -59,6 +59,7 @@ public class MainViewC {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            assert pane != null;
             stage.setScene(new Scene(pane));
             stage.initModality(Modality.WINDOW_MODAL);
             stage.initOwner(tab1.getScene().getWindow());
@@ -69,8 +70,9 @@ public class MainViewC {
             orderViewC.setStage(stage);
 
             if (getInstance().getActiveOrders()[getInstance().getTabIndex()] == null) {
-                getInstance().getActiveOrders()[getInstance().getTabIndex()] = new Order("test");
+                getInstance().getActiveOrders()[getInstance().getTabIndex()] = new Order();
                 getInstance().getListPayed()[getInstance().getTabIndex()] = new ArrayList();
+                orderViewC.addTableName((Label) event.getSource());
             }
             else {
 
