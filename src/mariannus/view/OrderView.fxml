@@ -16,7 +16,7 @@
         </columns>
       </TableView>
       <Label layoutX="597.0" layoutY="514.0" text="Zostáva zaplatiť:" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="318.0" />
-      <Label fx:id="suma" layoutX="734.0" layoutY="514.0" text="1000" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="257.0" />
+      <Label fx:id="suma" layoutX="734.0" layoutY="514.0" text="0" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="257.0" />
       <Button layoutX="744.0" layoutY="551.0" mnemonicParsing="false" onAction="#add" text="Pridaj" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="222.0" />
       <Button layoutX="818.0" layoutY="551.0" mnemonicParsing="false" onAction="#delete" text="Vymaž" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="142.0" />
       <Button layoutX="903.0" layoutY="551.0" mnemonicParsing="false" onAction="#handleOk" text="OK" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="14.0" />

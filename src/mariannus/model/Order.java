@@ -5,12 +5,15 @@ import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Tim on 19.2.2016.
  */
+@XmlRootElement( name = "Order" )
 public class Order {
     private final StringProperty name;
     private final List<Integer> ordered;
@@ -33,10 +36,12 @@ public class Order {
         return name;
     }
 
+    @XmlElement( name = "name" )
     public void setName(String name) {
         this.name.set(name);
     }
 
+    @XmlElement( name = "ordered" )
     public List<Integer> getOrdered() {
         return ordered;
     }
@@ -44,7 +49,7 @@ public class Order {
     public double getPrice() {
         return price;
     }
-
+    @XmlElement( name = "price" )
     public void setPrice(double price) {
         this.price = price;
     }

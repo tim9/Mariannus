@@ -12,7 +12,14 @@ import javafx.stage.Stage;
 import mariannus.Main;
 import mariannus.model.Item;
 import mariannus.model.Order;
+import mariannus.util.ItemListWraper;
+import mariannus.util.OrderListWraper;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Optional;
@@ -74,6 +81,7 @@ public class OrderViewC {
     private void handleOk() {
         if (isAllPaied()){
             getInstance().getActiveOrders()[getInstance().getTabIndex()].setPrice(allSum);
+            saveOrderToXML();
             releseSlot();
         }
         stage.close();
@@ -118,7 +126,7 @@ public class OrderViewC {
                         checkBox.setSelected(true);
                         checkBox.setDisable(true);
                     }
-                    System.out.println(getInstance().getListPayed()[getInstance().getTabIndex()]);
+//                    System.out.println(getInstance().getListPayed()[getInstance().getTabIndex()]);
                     setGraphic(checkBox);
                 }
             }
@@ -186,5 +194,28 @@ public class OrderViewC {
 
     void setStage(Stage stage) {
         this.stage = stage;
+    }
+
+    private void saveOrderToXML(){
+        try {
+            File file = new File("data/Order.xml");
+            FileWriter fw = new FileWriter(file,true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            JAXBContext context = JAXBContext.newInstance(Order.class);
+            Marshaller m = context.createMarshaller();
+            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
+            m.marshal(getInstance().getActiveOrders()[getInstance().getTabIndex()], bw);
+            bw.write("",0,10);
+            bw.close();
+
+
+        } catch (Exception e) { // catches ANY exception
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText("Could not save data to file:\n");
+            alert.showAndWait();
+        }
     }
 }
